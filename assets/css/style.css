@@ -202,6 +202,10 @@ a:hover {
   z-index: 9;
   min-height: 80px;
 }
+
+.navbar-blog {
+  background: #212529;
+}
 .navbar .icon-bar {
   color: #fff;
 }
@@ -1193,3 +1197,13 @@ a:hover {
   font-size: 16px;
 }
 /* End Blog */
+
+/* Start intro blog */
+#intro-blog {
+  background-color: #212529;
+}
+
+#intro-blog .caption-intro {
+  color: #fff;
+}
+/* End intro blog */
