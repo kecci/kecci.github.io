@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=description content="Abyan Juang Kecci - Portfolio">
+	<meta name="keyword" content="app, landing, software, html, responsive">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<!-- Title -->
+	<title>Abyan Juang Kecci - Portfolio</title>
+	<!-- Favicon -->
+	<link rel="icon" type="img/png" sizes="32x32" href="../assets/img/favicon.ico">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/magnific-popup.min.css">
+	<!-- Baguette Box -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/baguetteBox.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/fontawesome.min.css">
+	<!-- Oml-Carausel -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/owl.carousel.min.css">
+	<!-- Animate -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/animate.min.css">
+	<!-- Main Style -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<!-- Responsive -->
+	<link rel="stylesheet" type="text/css" href="../assets/css/responsive.css">
+
+	
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+	<!-- Start Navbar -->
+	<nav class="navbar navbar-blog navbar-expand-md fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">Kecci</a>
+
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+            </button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#zein-intro-area">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about-us">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#technical-skills">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#work-history">Experience</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#testimonial">Testimonials</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#blog">Publication</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End Navbar -->
+	
+	<!-- Start Intro Blog -->
+	<section id="intro-blog">
+		<div class="container">
+			<div class="caption-intro">
+				<h4>Abyan Juang Kecci</h4>
+				<div class="social-intro">
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/abyanjksatu" target="_blank">
+								<i class="fab fa-facebook" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/abyan-juang-kecci/" target="_blank">
+								<i class="fab fa-linkedin" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="http://instagram.com/keccikun/" target="_blank">
+								<i class="fab fa-instagram" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="http://keccikun.blogspot.com/" target="_blank">
+								<i class="fab fa-blogger" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/abyanjksatu" target="_blank">
+								<i class="fab fa-github" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Intro Blog -->
+
+    <!-- Start Blogger -->
+	<section id="blogger">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="blogger-text">
+						<div class="blogger-title">
+							<h1>Using multiple datasources with Spring Boot and Spring Data JpaRepository <span class="thin-text"></span></h1>
+							<p>07 September 2020</p>
+						</div>
+						<div class="blogger-description">
+							<p class="has-line-data" data-line-start="2" data-line-end="5">Spring Boot with Spring Data makes it easy to access a database through so called Repositories. But what if you want to access multiple databases maybe even with different Database Management Systems?<br>
+								Luckily Spring provides a way of doing this.<br>
+								I provided an example project with two PostgreSQL datasources on GitHub: <a href="https://github.com/jahe/spring-boot-multiple-datasources">https://github.com/jahe/spring-boot-multiple-datasources</a></p>
+								<ol>
+								<li class="has-line-data" data-line-start="5" data-line-end="6">Add an additional datasource configuration to your application.properties</li>
+								</ol>
+								<h1 class="code-line" data-line-start=6 data-line-end=7 ><a id="Oracle_DB__foo_6"></a>Oracle DB - “foo”</h1>
+								<p class="has-line-data" data-line-start="7" data-line-end="11">spring.datasource.url=jdbc:oracle:thin:@//db-server-foo:1521/FOO<br>
+								spring.datasource.username=fooadmin<br>
+								spring.datasource.password=foo123<br>
+								spring.datasource.driver-class-name=oracle.jdbc.OracleDriver</p>
+								<h1 class="code-line" data-line-start=11 data-line-end=12 ><a id="PostgreSQL_DB__bar_11"></a>PostgreSQL DB - “bar”</h1>
+								<p class="has-line-data" data-line-start="12" data-line-end="16">bar.datasource.url=jdbc:postgresql://db-server-bar:5432/bar<br>
+								bar.datasource.username=baradmin<br>
+								bar.datasource.password=bar123<br>
+								bar.datasource.driver-class-name=org.postgresql.Driver</p>
+								<ol start="2">
+								<li class="has-line-data" data-line-start="16" data-line-end="18">Set the SQL Dialect to “default” in your application.properties to let Spring autodetect the different SQL Dialects of each datasource<br>
+								spring.jpa.database=default</li>
+								<li class="has-line-data" data-line-start="18" data-line-end="20">Create a Java Package for each datasource with two nested Packages “domain” and “repo”<br>
+								src/main/java</li>
+								</ol>
+								<ul>
+								<li class="has-line-data" data-line-start="20" data-line-end="27">com.foobar
+								<ul>
+								<li class="has-line-data" data-line-start="21" data-line-end="24">foo
+								<ul>
+								<li class="has-line-data" data-line-start="22" data-line-end="23">domain</li>
+								<li class="has-line-data" data-line-start="23" data-line-end="24">repo</li>
+								</ul>
+								</li>
+								<li class="has-line-data" data-line-start="24" data-line-end="27">bar
+								<ul>
+								<li class="has-line-data" data-line-start="25" data-line-end="26">domain</li>
+								<li class="has-line-data" data-line-start="26" data-line-end="27">repo</li>
+								</ul>
+								</li>
+								</ul>
+								</li>
+								</ul>
+								<ol start="4">
+								<li class="has-line-data" data-line-start="27" data-line-end="30">Create a Configuration Class for the Oracle database “foo” named “FooDbConfig.java”<br>
+								package com.foobar;</li>
+								</ol>
+								<p class="has-line-data" data-line-start="30" data-line-end="37">@Configuration<br>
+								@EnableTransactionManagement<br>
+								@EnableJpaRepositories(<br>
+								entityManagerFactoryRef = “entityManagerFactory”,<br>
+								basePackages = { “com.foobar.foo.repo” }<br>
+								)<br>
+								public class FooDbConfig {</p>
+								<p class="has-line-data" data-line-start="38" data-line-end="44">@Primary<br>
+								@Bean(name = “dataSource”)<br>
+								@ConfigurationProperties(prefix = “spring.datasource”)<br>
+								public DataSource dataSource() {<br>
+								return DataSourceBuilder.create().build();<br>
+								}</p>
+								<p class="has-line-data" data-line-start="45" data-line-end="58">@Primary<br>
+								@Bean(name = “entityManagerFactory”)<br>
+								public LocalContainerEntityManagerFactoryBean<br>
+								entityManagerFactory(<br>
+								EntityManagerFactoryBuilder builder,<br>
+								@Qualifier(“dataSource”) DataSource dataSource<br>
+								) {<br>
+								return builder<br>
+								.dataSource(dataSource)<br>
+								.packages(“com.foobar.foo.domain”)<br>
+								.persistenceUnit(“foo”)<br>
+								.build();<br>
+								}</p>
+								<p class="has-line-data" data-line-start="59" data-line-end="68">@Primary<br>
+								@Bean(name = “transactionManager”)<br>
+								public PlatformTransactionManager transactionManager(<br>
+								@Qualifier(“entityManagerFactory”) EntityManagerFactory<br>
+								entityManagerFactory<br>
+								) {<br>
+								return new JpaTransactionManager(entityManagerFactory);<br>
+								}<br>
+								}</p>
+								<ol start="5">
+								<li class="has-line-data" data-line-start="68" data-line-end="71">Create a Configuration Class for the PostgreSQL database “bar” named “BarDbConfig.java”<br>
+								package com.foobar;</li>
+								</ol>
+								<p class="has-line-data" data-line-start="71" data-line-end="79">@Configuration<br>
+								@EnableTransactionManagement<br>
+								@EnableJpaRepositories(<br>
+								entityManagerFactoryRef = “barEntityManagerFactory”,<br>
+								transactionManagerRef = “barTransactionManager”,<br>
+								basePackages = { “com.foobar.bar.repo” }<br>
+								)<br>
+								public class BarDbConfig {</p>
+								<p class="has-line-data" data-line-start="80" data-line-end="85">@Bean(name = “barDataSource”)<br>
+								@ConfigurationProperties(prefix = “bar.datasource”)<br>
+								public DataSource dataSource() {<br>
+								return DataSourceBuilder.create().build();<br>
+								}</p>
+								<p class="has-line-data" data-line-start="86" data-line-end="107">@Bean(name = “barEntityManagerFactory”)<br>
+								public LocalContainerEntityManagerFactoryBean<br>
+								barEntityManagerFactory(<br>
+								EntityManagerFactoryBuilder builder,<br>
+								@Qualifier(“barDataSource”) DataSource dataSource<br>
+								) {<br>
+								return<br>
+								builder<br>
+								.dataSource(dataSource)<br>
+								.packages(“com.foobar.bar.domain”)<br>
+								.persistenceUnit(“bar”)<br>
+								.build();<br>
+								}<br>
+								@Bean(name = “barTransactionManager”)<br>
+								public PlatformTransactionManager barTransactionManager(<br>
+								@Qualifier(“barEntityManagerFactory”) EntityManagerFactory<br>
+								barEntityManagerFactory<br>
+								) {<br>
+								return new JpaTransactionManager(barEntityManagerFactory);<br>
+								}<br>
+								}</p>
+								<ol start="6">
+								<li class="has-line-data" data-line-start="107" data-line-end="110">Create an Entity “Foo.java” for the Oracle database “foo”<br>
+								package com.foobar.foo.domain;</li>
+								</ol>
+								<p class="has-line-data" data-line-start="110" data-line-end="113">@Entity<br>
+								@Table(name = “FOO”)<br>
+								public class Foo {</p>
+								<p class="has-line-data" data-line-start="114" data-line-end="118">@Id<br>
+								@GeneratedValue<br>
+								@Column(name = “ID”)<br>
+								private Long id;</p>
+								<p class="has-line-data" data-line-start="119" data-line-end="121">@Column(name = “FOO”)<br>
+								private String foo;</p>
+								<p class="has-line-data" data-line-start="122" data-line-end="125">Foo(String foo) {<br>
+								this.foo = foo;<br>
+								}</p>
+								<p class="has-line-data" data-line-start="126" data-line-end="130">Foo() {<br>
+								// Default constructor needed by JPA<br>
+								}<br>
+								}</p>
+								<ol start="7">
+								<li class="has-line-data" data-line-start="130" data-line-end="133">Create a Repository “FooRepository.java” for the Oracle database “foo”<br>
+								package com.foobar.foo.repo;</li>
+								</ol>
+								<p class="has-line-data" data-line-start="133" data-line-end="135">@Repository<br>
+								public interface FooRepository extends JpaRepository&lt;Foo, Long&gt; {</p>
+								<p class="has-line-data" data-line-start="136" data-line-end="137">Foo findById(Long id);</p>
+								<p class="has-line-data" data-line-start="138" data-line-end="139">}</p>
+								<ol start="8">
+								<li class="has-line-data" data-line-start="139" data-line-end="142">Create an Entity “Bar.java” for the PostgreSQL database “bar”<br>
+								package com.foobar.bar.domain;</li>
+								</ol>
+								<p class="has-line-data" data-line-start="142" data-line-end="145">@Entity<br>
+								@Table(name = “BAR”)<br>
+								public class Bar {</p>
+								<p class="has-line-data" data-line-start="146" data-line-end="150">@Id<br>
+								@GeneratedValue<br>
+								@Column(name = “ID”)<br>
+								private Long id;</p>
+								<p class="has-line-data" data-line-start="151" data-line-end="153">@Column(name = “BAR”)<br>
+								private String bar;</p>
+								<p class="has-line-data" data-line-start="154" data-line-end="157">Bar(String bar) {<br>
+								this.bar = bar;<br>
+								}</p>
+								<p class="has-line-data" data-line-start="158" data-line-end="162">Bar() {<br>
+								// Default constructor needed by JPA<br>
+								}<br>
+								}</p>
+								<ol start="9">
+								<li class="has-line-data" data-line-start="162" data-line-end="165">Create a Repository “BarRepository.java” for the PostgreSQL database “bar”<br>
+								package com.foobar.bar.repo;</li>
+								</ol>
+								<p class="has-line-data" data-line-start="165" data-line-end="167">@Repository<br>
+								public interface BarRepository extends JpaRepository&lt;Bar, Long&gt; {</p>
+								<p class="has-line-data" data-line-start="168" data-line-end="169">Bar findById(Long id);</p>
+								<p class="has-line-data" data-line-start="170" data-line-end="171">}</p>
+								<ol start="10">
+								<li class="has-line-data" data-line-start="171" data-line-end="174">Create the Spring Boot Main Class “Application.java”<br>
+								package com.foobar;</li>
+								</ol>
+								<p class="has-line-data" data-line-start="174" data-line-end="176">@SpringBootApplication<br>
+								public class Application {</p>
+								<p class="has-line-data" data-line-start="177" data-line-end="180">public static void main(String[] args) {<br>
+								SpringApplication.run(Application.class, args);<br>
+								}</p>
+								<p class="has-line-data" data-line-start="181" data-line-end="182">}</p>
+								<ol start="11">
+								<li class="has-line-data" data-line-start="182" data-line-end="185">Use the Repositories in a REST Controller (or somewhere else)<br>
+								package com.foobar;</li>
+								</ol>
+								<p class="has-line-data" data-line-start="185" data-line-end="187">@RestController<br>
+								public class FooBarController {</p>
+								<p class="has-line-data" data-line-start="188" data-line-end="190">private final FooRepository fooRepo;<br>
+								private final BarRepository barRepo;</p>
+								<p class="has-line-data" data-line-start="191" data-line-end="196">@Autowired<br>
+								FooBarController(FooRepository fooRepo, BarRepository barRepo) {<br>
+								this.fooRepo = fooRepo;<br>
+								this.barRepo = barRepo;<br>
+								}</p>
+								<p class="has-line-data" data-line-start="197" data-line-end="201">@RequestMapping(&quot;/foobar/{id}&quot;)<br>
+								public String fooBar(@PathVariable(“id”) Long id) {<br>
+								Foo foo = fooRepo.findById(id);<br>
+								Bar bar = barRepo.findById(id);</p>
+								<pre><code>return foo.getFoo() + &quot; &quot; + bar.getBar(); 
+								</code></pre>
+								<p class="has-line-data" data-line-start="203" data-line-end="208">}<br>
+								}<br>
+								Done. 👍<br>
+								Follow me on Twitter if you like: @joeclever<br>
+								Example project with two PostgreSQL datasources: <a href="https://github.com/jahe/spring-boot-multiple-datasources">https://github.com/jahe/spring-boot-multiple-datasources</a></p>
+								<p class="has-line-data" data-line-start="209" data-line-end="210">Source: <a href="https://medium.com/@joeclever/using-multiple-datasources-with-spring-boot-and-spring-data-6430b00c02e7">https://medium.com/@joeclever/using-multiple-datasources-with-spring-boot-and-spring-data-6430b00c02e7</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Start Blogger -->
+
+	<!-- Start Footer -->
+	<section id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="footer-detail">
+						<i class="fa fa-phone-volume" aria-hidden="true"></i>
+						<p>Phone</p>
+						<p>+62 896 3555 2242</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer-detail">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+						<p>Email</p>
+						<p>abyanjksatu@gmail.com</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="footer-detail">
+						<i class="fa fa-map" aria-hidden="true"></i>
+						<p>Addres</p>
+						<p>Pancoran DKI Jakarta Indonesia</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Footer -->
+
+
+	<!-- Start Copyright -->
+	<section id="copyright">
+		<div class="container">
+			<div class="copyright-detail">
+				<p>© 2019 Copyright <a href="#" target="_blank">Seniman Koding</a> All rights reserved.</p>
+			</div>
+		</div>
+	</section>
+	<!-- End Copyright -->
+
+
+	<!-- Start Scroll To Top -->
+    <div class="scroll-up">
+        <span class="top-one"></span>
+        <span class="top-two">Top</span>
+        <span class="top-three"></span>
+    </div> 
+    <!-- End Scroll To Top -->
+
+	<!--Jquery js-->
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <!--Bootstrap js-->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- Isotope -->
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Baguette Box -->
+    <script src="../assets/js/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.projects');
+    </script>
+    <!-- animated.headline -->
+    <script src="../assets/js/animated.headline.js"></script>
+    <!--Owl-Carousel js-->
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <!--Main js-->
+	<script src="../assets/js/main.js"></script>
+</body>
+</html>

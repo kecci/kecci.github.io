@@ -782,6 +782,10 @@ a:hover {
 .blog-detail {
   padding-top: 40px;
 }
+.blog-detail .col-lg-4 {
+  padding: 25px;
+  box-sizing: border-box;
+}
 .blog-box {
   position: relative;
   background: #f4f5f8;
@@ -817,7 +821,7 @@ a:hover {
 }
 .blog-box-title {
   padding: 0 15px;
-  height: 70px;
+  /* height: 70px; */
 }
 .blog-box-title a {
   color: #212529;
@@ -1207,3 +1211,59 @@ a:hover {
   color: #fff;
 }
 /* End intro blog */
+
+/* Start academic */
+#academic {
+  margin: auto;
+  width: 50%;
+}
+
+.academic-row {
+  margin: auto;
+}
+
+.academic-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: auto;
+}
+
+.academic-logo {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+}
+
+.academic-img {
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  #academic {
+    margin: auto;
+    width: 100%;
+  }
+
+  .academic-row {
+    margin: auto;
+  }
+
+  .academic-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .academic-logo {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+/* End academic */
+
+/* Start certification */
+.certification-deck {
+  padding-top: 30px;
+}
+/* End certification */
