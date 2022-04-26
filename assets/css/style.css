@@ -1266,4 +1266,9 @@ a:hover {
 .certification-deck {
   padding-top: 30px;
 }
+
+.certification-img {
+  width: auto;
+  height: 250px;
+}
 /* End certification */
