@@ -1216,6 +1216,8 @@ a:hover {
 #academic {
   margin: auto;
   width: 50%;
+  padding-top: 90px;
+	padding-bottom: 70px;
 }
 
 .academic-row {
@@ -1263,6 +1265,11 @@ a:hover {
 /* End academic */
 
 /* Start certification */
+#certification {
+  padding-top: 90px;
+	padding-bottom: 70px;
+}
+
 .certification-deck {
   padding-top: 30px;
 }
