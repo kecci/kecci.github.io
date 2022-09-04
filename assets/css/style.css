@@ -379,6 +379,15 @@ a:hover {
   color: #748182;
   font-size: 14px;
 }
+.about-us-explanation ul {
+  text-align: justify;
+  color: #748182;
+  font-size: 14px;
+}
+.about-us-explanation li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
 .about-us-information {
 	padding-top: 40px;
 }
