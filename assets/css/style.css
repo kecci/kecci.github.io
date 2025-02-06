@@ -402,6 +402,12 @@ a:hover {
 	letter-spacing: 2px;
 	margin-top: -5px;
 }
+
+.about-us-title a:link {color:#333;}  /* unvisited link  */
+.about-us-title a:visited {color:#333;}  /* visited link    */
+.about-us-title a:hover   {color:#333;}  /* mouse over link */
+.about-us-title a:active  {color:#333;}  /* selected link   */ 
+
 .about-us-explanation p {
 	padding-top: 25px;
   text-align: justify;
@@ -593,6 +599,12 @@ a:hover {
 	font-size: 40px;
 	font-weight: 700;
 }
+
+.services-title a:link {color:#333;}  /* unvisited link  */
+.services-title a:visited {color:#333;}  /* visited link    */
+.services-title a:hover   {color:#333;}  /* mouse over link */
+.services-title a:active  {color:#333;}  /* selected link   */ 
+
 .services-detail {
 	padding-top: 40px;
 }
@@ -766,6 +778,12 @@ a:hover {
   font-size: 40px;
   font-weight: 700;
 }
+
+.testimonial-title a:link {color:#333;}  /* unvisited link  */
+.testimonial-title a:visited {color:#333;}  /* visited link    */
+.testimonial-title a:hover   {color:#333;}  /* mouse over link */
+.testimonial-title a:active  {color:#333;}  /* selected link   */ 
+
 .carousel-testimonial {
   padding-top: 40px;
   cursor: e-resize;
@@ -817,6 +835,12 @@ a:hover {
   font-size: 40px;
   font-weight: 700;
 }
+
+.blog-title a:link {color:#333;}  /* unvisited link  */
+.blog-title a:visited {color:#333;}  /* visited link    */
+.blog-title a:hover   {color:#333;}  /* mouse over link */
+.blog-title a:active  {color:#333;}  /* selected link   */ 
+
 .blog-detail {
   padding-top: 40px;
 }
