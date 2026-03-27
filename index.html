@@ -403,41 +403,44 @@
 								</p>
 								<div class="collapse" id="jobdesk-stockbit">
 									<p>
-										Performance Optimized:<br>
-										• Re-clustering Redis Corpaction to New Cluster to saved 25% CPU Redis Global.<br>
-										• WS migration from SG to JKT via CloudFront — saved >$24K and reduce latency.<br>
-										• 10x faster Screener Engine 142ms → 12ms by Migrating from OpenSearch to InMemory.<br>
-										• 20x reduced payload of Running Trade WS 300kb → 15kb by BatchSizing.<br>
-										• 5x faster Company Follower & 8x faster Watchlist Minichart by BulkCache.<br>
-										• 30% CPU saved in Company Page & Catalog by InMemoryCache.<br>
-										• 64% CPU saved in Chartbit/TradingView by Cache+Compression.<br>
-										• 71% CPU saved in TradeBook & BrokerSummary by Migrate to TimescaleDB+Cache.<br>
+										Performance & Cost Optimization<br>
+										• 70% CPU service & redis saved by Optimize Intraday using Non-blocking Channel<br>
+										• 25% CPU redis saved by Re-clustering Redis Corpaction to New Cluster<br>
+										• $22K/Mo saved & reduce cross-region by WS migration SG to JKT via CloudFront<br>
+										• 10x faster 142ms → 12ms ScreenerEngine by Migrate from Opensearch to InMemory<br>
+										• 20x reduced 300kb → 15kb payload of WS RunningTrade by BatchSize<br>
+										• 5x faster CompanyFollower & 8x faster WatchlistMinichart by BulkCache<br>
+										• 30% CPU saved in CompanyPage & Catalog by InMemory<br>
+										• 64% CPU saved in IntradayBar 1m/1h by Cache+Compression<br>
+										• 71% CPU saved in TradeBook & BrokerSummary by Migrate to TimescaleDB+Cache<br>
 										<br>
-										Features Released:<br>
-										• Top Stock & Broker Flow Chart<br>
-										• FR Bonds List & Detail Page<br>
-										• Trade Book Total (Lot, Frequency, %)<br>
-										• Stock Labels (Codes, Tradable/Suspend)<br>
+										Features Released<br>
+										• TopStock & BrokerFlow<br>
+										• FR BondsList & DetailPage<br>
+										• TradeBook Total (Lot, Freq, %)<br>
+										• Stock Tag (Notation, Tradable/Suspend)<br>
 										• FCA Monitoring Stocks<br>
-										• IDX Full Call Auction (Indicative & BestBidOffer)<br>
-										• Order Queue<br>
-										• OrderBook Frequency<br>
+										• FCA Indicative & BestBidOffer<br>
+										• OrderQueue<br>
+										• OrderBook Freq<br>
 										<br>
-										Operations, Hygiene & Automation:<br>
+										Tech Hygiene<br>
 										• Improve Index Chart accuracy (1D Bar, OHLC rules, 2y historical sweeping)<br>
-										• Solve Issue Request/Context Canceled in API-Gateway to avoid wrong error metrics (RPC+HTTP)<br>
-										• Standarize CircuitBreaker Package<br>
-										• Enabled Dual ITCH Streams (main & replica with partitioning)<br>
+										• Eliminated false-positive "Context Canceled" errors in API Gateway to restore metric accuracy RPC+HTTP.<br>
+										• Standardize Package: CircuitBreaker, Retrier, RolloutConfig<br>
+										• Enabled Dual ITCH Streams by partitioning main & replica<br>
 										• Built automation tools for mock-trading, datasource switches, config updates, restarts, and reports<br>
 										<br>
-										Technical Expertise:<br>
+										Technical Expertise<br>
 										• Go: concurrency, performance tuning, idiomatic design<br>
 										• Scalable Systems: tracing, logging, HA, high-traffic strategies<br>
-										• Principles: clean architecture, SOLID, unit & load testing<br>
+										• Principles: clean architecture, SOLID, unit-test<br>
 										• Cloud/DevOps: AWS (RDS, ElastiCache, OpenSearch, EC2, S3, SQS)<br>
 										• Streaming: Kafka (Redpanda), NATS<br>
 										• APIs: gRPC, REST, WebSocket<br>
 										• Version Control: GitLab (Trunk-Based)<br>
+										• Container: Docker<br>
+										• Load-test: K6<br>
 									</p>
 									<div class="card card-body">
 									</div>
