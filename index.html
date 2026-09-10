@@ -168,10 +168,10 @@
 						</div>
 						<div class="about-us-explanation">
 							<p>
-								9+ years experience in Software Engineering, currently working as a Senior Software Engineer at Stockbit—a leading investment securities company in Indonesia. Specializing in optimizing real-time trading data feeds and financial data analysis, I develop core services that process stocks, mutual funds, and bonds data sourced primarily from the Indonesia Stock Exchange (IDX). My work focuses on enhancing accuracy, performance, stability, maintainability, efficiency, and cost optimization to support the company's vision.
+								9+ years experience in Software Engineering, currently working as a Senior Software Engineer at Stockbit—The investment securities company with the largest transaction volume in Indonesia. Specializing in optimizing real-time trading data feeds and financial data analysis with event-driven architecture and stateful systems. I develop core services to process stocks, mutual funds, and bonds data sourced primarily from the Indonesia Stock Exchange (IDX). My work focuses on enhancing accuracy, performance, stability, maintainability, security, efficiency, and cost optimization to support the company's long-term vision.
 							</p>
 							<p>
-								As part of the tech team, I actively participate in SDLC processes (Kanban & Scrum), designing technical solutions for proposals, changes, and new features. I adhere to best practices, clean code, and SOLID principles, maintaining a product-driven mindset and efficient workflows. Collaboration is key—I thrive in environments with direct feedback and Trunk-Based Development for version control. To ensure reliability, I implement monitoring, logging, and alerting systems, while handling operational tasks such as IDX mock trading simulations, data source switching, snapshot cleanups, and cross-checking stateful services.
+								As part of the tech team, I actively participate in SDLC processes (Kanban & Scrum), designing technical solutions for proposals, RFC, and new features. I adhere to best practices, clean code, and SOLID principles, maintaining a product-driven mindset and efficient workflows. Collaboration is key—I thrive in environments with direct feedback and Trunk-Based Development for version control. To ensure reliability, I implement monitoring, logging, and alerting systems, while handling operational tasks such as IDX mock trading simulations, data source switching, snapshot cleanups, and cross-checking stateful services.
 							</p>
 							<p>
 								Beyond my core role, I'm passionate about streamlining processes and solving problems at any scale. I contribute to open-source Go libraries, enjoy web scraping for data insights, and stay ahead by researching emerging technologies to accelerate software development. I closely follow advancements in AI and Blockchain, continuously expanding my tech stack knowledge. As part of my seasonal learning, I explored Context Engineering and MCP to broaden my expertise.
@@ -392,9 +392,9 @@
 								<p class="text-muted">
 									Stockbit is a one-stop stock investment platform. Apart from being a place to discuss and update the latest news about stocks, Stockbit also functions as an investment research and analysis platform.<br>
 									<br>
-									Stockbit provides financial data informations with various products includes Stock, Index, Warrant, Obligation, Commodity, Global Index, Crypto, ETF, FX.<br>
+									Stockbit provides financial data informations with various products includes Stock, Index, Warrant, Right, Obligation, Commodity, Global Index, Crypto, ETF, FX.<br>
 									<br>
-									These products are provided in our features includes Company Info, Catalog, Liveprice, Orderbook, Running Trade, Trade Book, Bandar Detector, Top Broker, Broker Flow, Top Stock, Hotlist, Market Movers, Event Calendar, Earnings, Valuation, Watchlist, Screener, Chartbit, Price Alert, Live Ratios.
+									These products are provided in our features includes Company Info, Catalog, Liveprice, Orderbook, Running Trade, Trade Book, Bandar Detector, Top Broker, Broker Flow, Top Stock, Market Movers, Corpaction, Earnings, Valuation, Watchlist, Screener, Chartbit, Price Alert, Live Ratios.
 								</p>
 								<p>
 									<a data-toggle="collapse" data-target="#jobdesk-stockbit" href="">
@@ -404,6 +404,8 @@
 								<div class="collapse" id="jobdesk-stockbit">
 									<p>
 										Performance & Cost Optimization<br>
+										• $1,5k/Mo saved by terminate NATS-SG after JKT migration<br>
+										• 100% saved 1.5 → 0 ActiveSession DB for FollowingStatus by cache<br>
 										• 70% CPU service & redis saved by Optimize Intraday using Non-blocking Channel<br>
 										• 25% CPU redis saved by Re-clustering Redis Corpaction to New Cluster<br>
 										• $22K/Mo saved & reduce cross-region by WS migration SG to JKT via CloudFront<br>
@@ -415,6 +417,7 @@
 										• 71% CPU saved in TradeBook & BrokerSummary by Migrate to TimescaleDB+Cache<br>
 										<br>
 										Features Released<br>
+										• BigMoney by OrderDetail<br>
 										• TopStock & BrokerFlow<br>
 										• FR BondsList & DetailPage<br>
 										• TradeBook Total (Lot, Freq, %)<br>
@@ -425,22 +428,23 @@
 										• OrderBook Freq<br>
 										<br>
 										Tech Hygiene<br>
-										• Improve Index Chart accuracy (1D Bar, OHLC rules, 2y historical sweeping)<br>
-										• Eliminated false-positive "Context Canceled" errors in API Gateway to restore metric accuracy RPC+HTTP.<br>
-										• Standardize Package: CircuitBreaker, Retrier, RolloutConfig<br>
-										• Enabled Dual ITCH Streams by partitioning main & replica<br>
-										• Built automation tools for mock-trading, datasource switches, config updates, restarts, and reports<br>
+										• Improved Index Chart accuracy 1D Bar, OHLC, 2Y sweep<br>
+										• Contribute to Fixed false “Context Canceled” errors in API Gateway RPC/HTTP metrics<br>
+										• Standardized CircuitBreaker, Retrier, and RolloutConfig packages<br>
+										• Enabled dual ITCH streams via main/replica partitioning<br>
+										• Built automation for mock trading, datasource switching, config updates, restarts, and reporting<br>
 										<br>
 										Technical Expertise<br>
-										• Go: concurrency, performance tuning, idiomatic design<br>
-										• Scalable Systems: tracing, logging, HA, high-traffic strategies<br>
-										• Principles: clean architecture, SOLID, unit-test<br>
-										• Cloud/DevOps: AWS (RDS, ElastiCache, OpenSearch, EC2, S3, SQS)<br>
-										• Streaming: Kafka (Redpanda), NATS<br>
-										• APIs: gRPC, REST, WebSocket<br>
-										• Version Control: GitLab (Trunk-Based)<br>
+										• Go: concurrency, performance, idiomatic<br>
+										• Scalable: trace, logs, HA, high-traffic strategy<br>
+										• Principle: clean arch, SOLID, unit-test<br>
+										• Cloud: AWS RDS, ElastiCache, OpenSearch, EC2, S3, SQS<br>
+										• Version Control: Git Trunk-Based<br>
+										• Broker: Kafka/Redpanda, NATS<br>
+										• API: gRPC, REST, WebSocket<br>
 										• Container: Docker<br>
 										• Load-test: K6<br>
+										• AI: Claude<br>
 									</p>
 									<div class="card card-body">
 									</div>
