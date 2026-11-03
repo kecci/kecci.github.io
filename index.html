@@ -168,7 +168,7 @@
 						</div>
 						<div class="about-us-explanation">
 							<p>
-								9+ years experience in Software Engineering, currently working as a Senior Software Engineer at Stockbit—The investment securities company with the largest transaction volume in Indonesia. Specializing in optimizing real-time trading data feeds and financial data analysis with event-driven architecture and stateful systems. I develop core services to process stocks, mutual funds, and bonds data sourced primarily from the Indonesia Stock Exchange (IDX). My work focuses on enhancing accuracy, performance, stability, maintainability, security, efficiency, and cost optimization to support the company's long-term vision.
+								9+ years experience in Software Engineering, currently working as a Senior Software Engineer at Stockbit—The investment securities company with the largest transaction volume and frequency in Indonesia. Specializing in optimizing real-time trading data feeds and financial data analysis with event-driven architecture and stateful systems. I develop core services to process stocks, mutual funds, and bonds data sourced primarily from the Indonesia Stock Exchange (IDX). My work focuses on enhancing accuracy, performance, stability, maintainability, security, efficiency, and cost optimization to support the company’s long-term vision.
 							</p>
 							<p>
 								As part of the tech team, I actively participate in SDLC processes (Kanban & Scrum), designing technical solutions for proposals, RFC, and new features. I adhere to best practices, clean code, and SOLID principles, maintaining a product-driven mindset and efficient workflows. Collaboration is key—I thrive in environments with direct feedback and Trunk-Based Development for version control. To ensure reliability, I implement monitoring, logging, and alerting systems, while handling operational tasks such as IDX mock trading simulations, data source switching, snapshot cleanups, and cross-checking stateful services.
@@ -404,6 +404,7 @@
 								<div class="collapse" id="jobdesk-stockbit">
 									<p>
 										Performance & Cost Optimization<br>
+										• 150Gb saved by improve 2 index in Timescale<br>
 										• $1,5k/Mo saved by terminate NATS-SG after JKT migration<br>
 										• 100% saved 1.5 → 0 ActiveSession DB for FollowingStatus by cache<br>
 										• 70% CPU service & redis saved by Optimize Intraday using Non-blocking Channel<br>
@@ -414,9 +415,11 @@
 										• 5x faster CompanyFollower & 8x faster WatchlistMinichart by BulkCache<br>
 										• 30% CPU saved in CompanyPage & Catalog by InMemory<br>
 										• 64% CPU saved in IntradayBar 1m/1h by Cache+Compression<br>
-										• 71% CPU saved in TradeBook & BrokerSummary by Migrate to TimescaleDB+Cache<br>
+										• 71% CPU saved in TradeBook & BrokerSummary by Migrate to Timescale+Cache<br>
 										<br>
 										Features Released<br>
+										• IDX MME-NMDF New Protocol<br>
+										• Screener TradeAggression<br>
 										• BigMoney by OrderDetail<br>
 										• TopStock & BrokerFlow<br>
 										• FR BondsList & DetailPage<br>
@@ -431,14 +434,14 @@
 										• Improved Index Chart accuracy 1D Bar, OHLC, 2Y sweep<br>
 										• Contribute to Fixed false “Context Canceled” errors in API Gateway RPC/HTTP metrics<br>
 										• Standardized CircuitBreaker, Retrier, and RolloutConfig packages<br>
-										• Enabled dual ITCH streams via main/replica partitioning<br>
 										• Built automation for mock trading, datasource switching, config updates, restarts, and reporting<br>
 										<br>
 										Technical Expertise<br>
 										• Go: concurrency, performance, idiomatic<br>
 										• Scalable: trace, logs, HA, high-traffic strategy<br>
-										• Principle: clean arch, SOLID, unit-test<br>
 										• Cloud: AWS RDS, ElastiCache, OpenSearch, EC2, S3, SQS<br>
+										• Storage: Timescale, Postgres, MySQL, Redis<br>
+										• Principle: clean arch, SOLID, unit-test<br>
 										• Version Control: Git Trunk-Based<br>
 										• Broker: Kafka/Redpanda, NATS<br>
 										• API: gRPC, REST, WebSocket<br>
